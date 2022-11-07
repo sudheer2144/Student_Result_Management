@@ -11,8 +11,6 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
         initComponents();
     }
 
-    @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
@@ -39,36 +37,36 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(615, 500));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 30)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 30));
         jLabel1.setText("Update Student Result");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18));
         jLabel2.setText("Enter Roll No");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, -1, 30));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18));
         jLabel3.setText("Physics");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18));
         jLabel4.setText("Chemistry");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18));
         jLabel5.setText("C");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 300, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18));
         jLabel6.setText("EDDS");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, -1, -1));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, 190, 30));
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18));
         jLabel7.setText("Maths");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, -1));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/icons8-search-30.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/icons8-search-30.png")));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -81,7 +79,7 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
         getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 300, 150, -1));
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 350, 150, -1));
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jButton2.setText("Update");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,7 +88,7 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 400, -1, -1));
 
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jButton3.setText("Exit");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,14 +97,14 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 400, -1, -1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/class.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/class.png")));
         jLabel8.setText("jLabel8");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-80, -80, -1, -1));
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
 
         String rolno=jTextField1.getText();
         int maths = Integer.parseInt(jTextField2.getText());
@@ -130,17 +128,17 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
         {
             JOptionPane.showMessageDialog(null, e.toString());
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
 
         this.setVisible(false);
         admin_HomePage frame=new admin_HomePage();
         frame.setVisible(true);
         frame.setLocationRelativeTo(null);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
 
         String rollno=jTextField1.getText();
         try
@@ -166,7 +164,7 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
         {
             JOptionPane.showMessageDialog(rootPane, e.toString());
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }
 
     public static void main(String args[]) {
 
@@ -177,7 +175,7 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -195,5 +193,5 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
-    // End of variables declaration//GEN-END:variables
+
 }
