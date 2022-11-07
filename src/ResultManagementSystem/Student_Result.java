@@ -47,9 +47,6 @@ public class Student_Result extends javax.swing.JFrame {
         } 
     }
 
-
-    @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
@@ -106,31 +103,31 @@ public class Student_Result extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 30)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 30));
         jLabel1.setText("Student Result");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         jLabel2.setText("Name");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 49, 30));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jLabel3.setText("Father Name");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, 30));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jLabel4.setText("Course");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, -1, 30));
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jLabel5.setText("Roll No");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 50, -1, 30));
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jLabel6.setText("Gender");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, -1, 30));
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jLabel7.setText("Branch");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 130, -1, 30));
 
@@ -143,39 +140,39 @@ public class Student_Result extends javax.swing.JFrame {
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 120, 30));
         getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 120, 30));
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 3, 12));
         jLabel8.setText("Subjects");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 50, -1));
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 3, 12));
         jLabel9.setText("Total Marks");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 3, 12));
         jLabel10.setText("Passin Marks");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 3, 12));
         jLabel11.setText("Marks Obtained");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jLabel12.setText("Maths");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jLabel13.setText("Physics");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jLabel14.setText("Total");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 410, -1, 30));
 
-        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jLabel15.setText("C");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jLabel16.setText("EDDS");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, -1, -1));
         getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 70, -1));
@@ -190,53 +187,53 @@ public class Student_Result extends javax.swing.JFrame {
         getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 330, 70, -1));
         getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 370, 70, -1));
 
-        jLabel17.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Segoe UI", 3, 14));
         jLabel17.setText("100");
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
 
-        jLabel18.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 3, 14));
         jLabel18.setText("100");
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, -1, -1));
 
-        jLabel19.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 3, 14));
         jLabel19.setText("100");
         getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, -1, -1));
 
-        jLabel20.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Segoe UI", 3, 14));
         jLabel20.setText("100");
         getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 330, -1, -1));
 
-        jLabel21.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Segoe UI", 3, 14))
         jLabel21.setText("100");
         getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, -1, -1));
 
-        jLabel22.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jLabel22.setFont(new java.awt.Font("Segoe UI", 3, 14));
         jLabel22.setText("40");
         getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, -1, -1));
 
-        jLabel23.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("Segoe UI", 3, 14));
         jLabel23.setText("40");
         getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 250, -1, -1));
 
-        jLabel24.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jLabel24.setFont(new java.awt.Font("Segoe UI", 3, 14));
         jLabel24.setText("40");
         getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, -1, -1));
 
-        jLabel25.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jLabel25.setFont(new java.awt.Font("Segoe UI", 3, 14));
         jLabel25.setText("40");
         getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 330, -1, -1));
 
-        jLabel26.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jLabel26.setFont(new java.awt.Font("Segoe UI", 3, 14));
         jLabel26.setText("40");
         getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, -1, -1));
 
         jLabel27.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel27.setFont(new java.awt.Font("Segoe UI", 3, 30)); // NOI18N
+        jLabel27.setFont(new java.awt.Font("Segoe UI", 3, 30));
         jLabel27.setForeground(new java.awt.Color(0, 0, 255));
         getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, 70, 40));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Logout");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -249,24 +246,20 @@ public class Student_Result extends javax.swing.JFrame {
         getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, 120, 30));
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 120, 30));
 
-        jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jLabel28.setText("Chemistry");
         getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
         getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, 70, 30));
 
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/class.png"))); // NOI18N
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/class.png")));
         jLabel30.setText("jLabel30");
         getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -10, -1, -1));
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField10ActionPerformed
 
-    private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
-        // TODO add your handling code here:
+    private void formComponentShown(java.awt.event.ComponentEvent evt) {
         jTextField1.setEditable(false);
         jTextField2.setEditable(false);
         jTextField3.setEditable(false);
@@ -280,19 +273,19 @@ public class Student_Result extends javax.swing.JFrame {
         jTextField11.setEditable(false);
         jLabel27.setOpaque(true);
         
-    }//GEN-LAST:event_formComponentShown
+    }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         
                 this.setVisible(false);
                 Student_Search frame=new Student_Search();
                 frame.setVisible(true);
                 frame.setLocationRelativeTo(null);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {
 
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }
 
 
     public static void main(String args[]) {
@@ -304,7 +297,6 @@ public class Student_Result extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -347,5 +339,4 @@ public class Student_Result extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
-    // End of variables declaration//GEN-END:variables
 }
