@@ -283,9 +283,6 @@ public class Student_Result extends javax.swing.JFrame {
                 frame.setLocationRelativeTo(null);
     }
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
 
 
     public static void main(String args[]) {
