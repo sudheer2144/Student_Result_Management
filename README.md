@@ -20,4 +20,4 @@ MySql Database.
 
 <img src="src/screenshots/listStudents.PNG" width="400">    <img src="src/screenshots/listResults.PNG" width="400">
 
-<img src="src/screenshots/updatemarks.PNG" width="400">
+<img src="src/screenshots/updatemarks.PNG" width="400">   <img src="src/screenshots/database.PNG" width="400">
