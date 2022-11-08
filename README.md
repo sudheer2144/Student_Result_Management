@@ -6,22 +6,18 @@ Java Swing && Java AWT
 
 MySql Database.
 
-<img src="src/screenshots/home.PNG" width="400">        <img src="src/screenshots/studentsearch.PNG" width="400">
+<img src="src/screenshots/home.PNG" width="400">
 
-<img src="src/screenshots/studentsearch.PNG" width="400">
+**student Module**
 
-<img src="src/screenshots/studentresult.PNG" width="400">
+<img src="src/screenshots/studentsearch.PNG" width="400">   <img src="src/screenshots/studentresult.PNG" width="400">
 
-<img src="src/screenshots/adminlogin.PNG" width="400">
+**admin Module**
 
-<img src="src/screenshots/adminhome.PNG" width="400">
+<img src="src/screenshots/adminlogin.PNG" width="400">    <img src="src/screenshots/adminhome.PNG" width="400">
 
-<img src="src/screenshots/studentregistration.PNG" width="400">
+<img src="src/screenshots/studentregistration.PNG" width="400">   <img src="src/screenshots/insertMarks.PNG" width="400">
 
-<img src="src/screenshots/insertMarks.PNG" width="400">
-
-<img src="src/screenshots/listStudents.PNG" width="400">
-
-<img src="src/screenshots/listResults.PNG" width="400">
+<img src="src/screenshots/listStudents.PNG" width="400">    <img src="src/screenshots/listResults.PNG" width="400">
 
 <img src="src/screenshots/updatemarks.PNG" width="400">
