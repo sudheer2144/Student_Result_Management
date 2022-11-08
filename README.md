@@ -6,7 +6,7 @@ Java Swing && Java AWT
 
 MySql Database.
 
-<img src="src/screenshots/home.PNG" width="400">
+<img src="src/screenshots/home.PNG" width="400">        <img src="src/screenshots/studentsearch.PNG" width="400">
 
 <img src="src/screenshots/studentsearch.PNG" width="400">
 
