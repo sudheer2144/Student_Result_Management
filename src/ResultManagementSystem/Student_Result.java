@@ -9,35 +9,37 @@ public class Student_Result extends javax.swing.JFrame {
  Student_Result() {
         initComponents();
     }
-    Student_Result(ResultSet rs)
+    Student_Result(ResultSet rs)//this ResultSet (rs) object contains all the details about the searched student
     {
         initComponents();
         try
         {      
-            jTextField1.setText(rs.getString(1));
-            jTextField2.setText(rs.getString(2));
-            jTextField3.setText(rs.getString(4));
-            jTextField4.setText(rs.getString(3));
-            jTextField5.setText(rs.getString(5));
-            jTextField6.setText(rs.getString(6));
-            jTextField7.setText(rs.getString(8));
-            jTextField8.setText(rs.getString(9));
-            jTextField9.setText(rs.getString(10));
-            jTextField10.setText(rs.getString(11));
-            jTextField11.setText(rs.getString(12));
-            jTextField12.setText(rs.getString(13));
-            int s1 = Integer.parseInt(rs.getString(8));
-            int s2 = Integer.parseInt(rs.getString(9));
-            int s3 = Integer.parseInt(rs.getString(10));
-            int s4 = Integer.parseInt(rs.getString(11));
-            int s5 = Integer.parseInt(rs.getString(12));
-            if(s1<40||s2<40||s3<40||s4<40||s5<40)
+            nameField.setText(rs.getString(1));
+            rollnoField.setText(rs.getString(2));
+            fatherField.setText(rs.getString(4));
+            genderField.setText(rs.getString(3));
+            courseField.setText(rs.getString(5));
+            branchField.setText(rs.getString(6));
+            mathsField.setText(rs.getString(8));
+            physicsField.setText(rs.getString(9));
+            chemistryField.setText(rs.getString(10));
+            nameField0.setText(rs.getString(11));
+            nameField1.setText(rs.getString(12));
+            nameField2.setText(rs.getString(13));
+			
+			//below calculates the verdict whether student got pass or fail
+            int subject1 = Integer.parseInt(rs.getString(8));
+            int subject2 = Integer.parseInt(rs.getString(9));
+            int subject3 = Integer.parseInt(rs.getString(10));
+            int subject4 = Integer.parseInt(rs.getString(11));
+            int subject5 = Integer.parseInt(rs.getString(12));
+            if(subject1<40||subject2<40||subject3<40||subject4<40||subject5<40)
             {
-                jLabel27.setText("Fail");
+                verdictLabel.setText("Fail");
             }
             else
             {
-                jLabel27.setText("Pass");
+                verdictLabel.setText("Pass");
             }
             
         }
@@ -49,16 +51,16 @@ public class Student_Result extends javax.swing.JFrame {
 
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        titleLabel = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
+        nameField = new javax.swing.JTextField();
+        fatherField = new javax.swing.JTextField();
+        courseField = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -68,11 +70,11 @@ public class Student_Result extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
+        mathsField = new javax.swing.JTextField();
+        physicsField = new javax.swing.JTextField();
+        chemistryField = new javax.swing.JTextField();
+        nameField0 = new javax.swing.JTextField();
+        nameField1 = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -83,13 +85,13 @@ public class Student_Result extends javax.swing.JFrame {
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        verdictLabel = new javax.swing.JLabel();
+        logoutButton = new javax.swing.JButton();
+        rollnoField = new javax.swing.JTextField();
+        genderField = new javax.swing.JTextField();
+        branchField = new javax.swing.JTextField();
         jLabel28 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        nameField2 = new javax.swing.JTextField();
         jLabel30 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -103,9 +105,9 @@ public class Student_Result extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 30));
-        jLabel1.setText("Student Result");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, -1, -1));
+        titleLabel.setFont(new java.awt.Font("Segoe UI", 3, 30));
+        titleLabel.setText("Student Result");
+        getContentPane().add(titleLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         jLabel2.setText("Name");
@@ -131,14 +133,14 @@ public class Student_Result extends javax.swing.JFrame {
         jLabel7.setText("Branch");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 130, -1, 30));
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        nameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                nameFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 120, 30));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 120, 30));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 120, 30));
+        getContentPane().add(nameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 120, 30));
+        getContentPane().add(fatherField, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 120, 30));
+        getContentPane().add(courseField, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 120, 30));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 3, 12));
         jLabel8.setText("Subjects");
@@ -175,17 +177,17 @@ public class Student_Result extends javax.swing.JFrame {
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jLabel16.setText("EDDS");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, -1, -1));
-        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 70, -1));
-        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 250, 70, -1));
-        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, 70, -1));
+        getContentPane().add(mathsField, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 70, -1));
+        getContentPane().add(physicsField, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 250, 70, -1));
+        getContentPane().add(chemistryField, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, 70, -1));
 
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
+        nameField0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
+                nameField0ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 330, 70, -1));
-        getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 370, 70, -1));
+        getContentPane().add(nameField0, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 330, 70, -1));
+        getContentPane().add(nameField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 370, 70, -1));
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 3, 14));
         jLabel17.setText("100");
@@ -227,29 +229,29 @@ public class Student_Result extends javax.swing.JFrame {
         jLabel26.setText("40");
         getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, -1, -1));
 
-        jLabel27.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel27.setFont(new java.awt.Font("Segoe UI", 3, 30));
-        jLabel27.setForeground(new java.awt.Color(0, 0, 255));
-        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, 70, 40));
+        verdictLabel.setBackground(new java.awt.Color(255, 255, 255));
+        verdictLabel.setFont(new java.awt.Font("Segoe UI", 3, 30));
+        verdictLabel.setForeground(new java.awt.Color(0, 0, 255));
+        getContentPane().add(verdictLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, 70, 40));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Logout");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        logoutButton.setBackground(new java.awt.Color(0, 0, 0));
+        logoutButton.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        logoutButton.setForeground(new java.awt.Color(255, 255, 255));
+        logoutButton.setText("Logout");
+        logoutButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                logoutButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, -1, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 50, 120, 30));
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, 120, 30));
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 120, 30));
+        getContentPane().add(logoutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, -1, -1));
+        getContentPane().add(rollnoField, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 50, 120, 30));
+        getContentPane().add(genderField, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, 120, 30));
+        getContentPane().add(branchField, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 120, 30));
 
         jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 14));
         jLabel28.setText("Chemistry");
         getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
-        getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, 70, 30));
+        getContentPane().add(nameField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, 70, 30));
 
         jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/class.png")));
         jLabel30.setText("jLabel30");
@@ -260,22 +262,22 @@ public class Student_Result extends javax.swing.JFrame {
 
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {
-        jTextField1.setEditable(false);
-        jTextField2.setEditable(false);
-        jTextField3.setEditable(false);
-        jTextField4.setEditable(false);
-        jTextField5.setEditable(false);
-        jTextField6.setEditable(false);
-        jTextField7.setEditable(false);
-        jTextField8.setEditable(false);
-        jTextField9.setEditable(false);
-        jTextField10.setEditable(false);
-        jTextField11.setEditable(false);
-        jLabel27.setOpaque(true);
+        nameField.setEditable(false);
+        rollnoField.setEditable(false);
+        fatherField.setEditable(false);
+        genderField.setEditable(false);
+        courseField.setEditable(false);
+        branchField.setEditable(false);
+        mathsField.setEditable(false);
+        physicsField.setEditable(false);
+        chemistryField.setEditable(false);
+        nameField0.setEditable(false);
+        nameField1.setEditable(false);
+        verdictLabel.setOpaque(true);
         
     }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void logoutButtonActionPerformed(java.awt.event.ActionEvent evt) {
         
                 this.setVisible(false);
                 Student_Search frame=new Student_Search();
@@ -294,8 +296,8 @@ public class Student_Result extends javax.swing.JFrame {
         });
     }
 
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton logoutButton;
+    private javax.swing.JLabel titleLabel;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -314,7 +316,7 @@ public class Student_Result extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel verdictLabel;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
@@ -324,16 +326,16 @@ public class Student_Result extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField nameField;
+    private javax.swing.JTextField nameField0;
+    private javax.swing.JTextField nameField1;
+    private javax.swing.JTextField nameField2;
+    private javax.swing.JTextField rollnoField;
+    private javax.swing.JTextField fatherField;
+    private javax.swing.JTextField genderField;
+    private javax.swing.JTextField courseField;
+    private javax.swing.JTextField branchField;
+    private javax.swing.JTextField mathsField;
+    private javax.swing.JTextField physicsField;
+    private javax.swing.JTextField chemistryField;
 }
