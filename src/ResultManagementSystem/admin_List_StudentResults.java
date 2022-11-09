@@ -15,9 +15,9 @@ public class admin_List_StudentResults extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
+        tableScrollPanel = new javax.swing.JScrollPane();
+        studentResultsTable = new javax.swing.JTable();
+        backButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -35,7 +35,7 @@ public class admin_List_StudentResults extends javax.swing.JFrame {
         jLabel1.setText("List of Results");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, -1, -1));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        studentResultsTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null},
@@ -46,18 +46,18 @@ public class admin_List_StudentResults extends javax.swing.JFrame {
                 "Roll No", "Name", "Maths", "Physics", "Chemistry", "C", "EDDS", "Total"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        tableScrollPanel.setViewportView(studentResultsTable);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 580, 260));
+        getContentPane().add(tableScrollPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 580, 260));
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jButton1.setText("Exit");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        backButton.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        backButton.setText("Exit");
+        backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                backButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 380, -1, -1));
+        getContentPane().add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 380, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/class.png")));
         jLabel2.setText("jLabel2");
@@ -73,7 +73,7 @@ public class admin_List_StudentResults extends javax.swing.JFrame {
             Connection conn=connectionProvider.getCon();
             Statement st=conn.createStatement();
             ResultSet rs=st.executeQuery("select students.rollno,students.name,results.maths,results.physics,results.chemistry,results.c,results.edds,results.result from students inner join results where students.rollno=results.rollno");
-            jTable1.setModel(DbUtils.resultSetToTableModel(rs));
+            studentResultsTable.setModel(DbUtils.resultSetToTableModel(rs));
         }
         catch(Exception e)
         {
@@ -82,7 +82,7 @@ public class admin_List_StudentResults extends javax.swing.JFrame {
         
     }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
         this.setVisible(false);
         admin_HomePage frame = new admin_HomePage();
@@ -100,10 +100,10 @@ public class admin_List_StudentResults extends javax.swing.JFrame {
     }
 
 
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton backButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JScrollPane tableScrollPanel;
+    private javax.swing.JTable studentResultsTable;
 
 }
