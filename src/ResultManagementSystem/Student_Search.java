@@ -16,10 +16,10 @@ public class Student_Search extends javax.swing.JFrame {
 
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        rollnoField = new javax.swing.JTextField();
+        searchButton = new javax.swing.JButton();
+        exitButton = new javax.swing.JButton();
+        imageLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(615, 500));
@@ -34,35 +34,35 @@ public class Student_Search extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 30)); 
         jLabel1.setText("Student Result");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 20, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, 190, 30));
+        getContentPane().add(rollnoField, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, 190, 30));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/icons8-search-30.png")));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        searchButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/icons8-search-30.png")));
+        searchButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                searchButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 210, 40, 30));
+        getContentPane().add(searchButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 210, 40, 30));
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jButton2.setText("Exit");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        exitButton.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        exitButton.setText("Exit");
+        exitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                exitButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, -1, -1));
+        getContentPane().add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, -1, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/class.png")));
-        jLabel3.setText("jLabel3");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-180, -10, -1, -1));
+        imageLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/class.png")));
+        imageLabel.setText("imageLabel");
+        getContentPane().add(imageLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(-180, -10, -1, -1));
 
         pack();
     }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
-        String rolno=jTextField1.getText();
+        String rolno=rollnoField.getText();
         try
         {
             Connection conn=connectionProvider.getCon();
@@ -86,7 +86,7 @@ public class Student_Search extends javax.swing.JFrame {
         }
     }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
         this.setVisible(false);
         Home_Main studentframe=new Home_Main();
@@ -104,11 +104,11 @@ public class Student_Search extends javax.swing.JFrame {
     }
 
   
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton searchButton;
+    private javax.swing.JButton exitButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel imageLabel;
+    private javax.swing.JTextField rollnoField;
 
 }
