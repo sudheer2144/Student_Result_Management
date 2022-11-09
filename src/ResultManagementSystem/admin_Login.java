@@ -16,10 +16,10 @@ public class admin_Login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        submitButton = new javax.swing.JButton();
+        exitButton = new javax.swing.JButton();
+        usernameField = new javax.swing.JTextField();
+        passwordField = new javax.swing.JPasswordField();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -45,25 +45,25 @@ public class admin_Login extends javax.swing.JFrame {
         jLabel3.setText("Passsword");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, -1));
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jButton1.setText("Submit");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        submitButton.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        submitButton.setText("Submit");
+        submitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                submitButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, -1, -1));
+        getContentPane().add(submitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, -1, -1));
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jButton2.setText("Exit");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        exitButton.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        exitButton.setText("Exit");
+        exitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                exitButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 280, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, 220, -1));
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, 220, -1));
+        getContentPane().add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 280, -1, -1));
+        getContentPane().add(usernameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, 220, -1));
+        getContentPane().add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, 220, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/class.png")));
         jLabel4.setText("jLabel4");
@@ -72,10 +72,10 @@ public class admin_Login extends javax.swing.JFrame {
         pack();
     }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
-        String username=jTextField1.getText();
-        String password=jPasswordField1.getText();
+        String username=usernameField.getText();
+        String password=passwordField.getText();
         try
         {
             Connection conn=connectionProvider.getCon();
@@ -102,7 +102,7 @@ public class admin_Login extends javax.swing.JFrame {
     }
 
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
             this.setVisible(false);
             Home_Main frame=new Home_Main();
@@ -120,13 +120,13 @@ public class admin_Login extends javax.swing.JFrame {
     }
 
 
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton submitButton;
+    private javax.swing.JButton exitButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JPasswordField passwordField;
+    private javax.swing.JTextField usernameField;
 
 }
