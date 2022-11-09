@@ -19,18 +19,18 @@ public class admin_Insert_Results extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        rollnoField = new javax.swing.JTextField();
+        searchButton = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        mathsField = new javax.swing.JTextField();
+        physicsField = new javax.swing.JTextField();
+        chemistryField = new javax.swing.JTextField();
+        cProgrammingField = new javax.swing.JTextField();
+        eddsField = new javax.swing.JTextField();
+        tableScrollPanel = new javax.swing.JScrollPane();
+        studentDetailsTable = new javax.swing.JTable();
+        saveButton = new javax.swing.JButton();
+        exitButton = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -64,27 +64,27 @@ public class admin_Insert_Results extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(0, 0, 51));
         jLabel6.setText("C Language");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, 160, 30));
+        getContentPane().add(rollnoField, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, 160, 30));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/icons8-search-30.png")));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        searchButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/icons8-search-30.png")));
+        searchButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                searchButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 40, 30, 30));
+        getContentPane().add(searchButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 40, 30, 30));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18));
         jLabel7.setForeground(new java.awt.Color(0, 0, 51));
         jLabel7.setText("Maths");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, -1, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 190, 130, -1));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, 130, -1));
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 290, 130, -1));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 130, -1));
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, 130, -1));
+        getContentPane().add(mathsField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 190, 130, -1));
+        getContentPane().add(physicsField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, 130, -1));
+        getContentPane().add(chemistryField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 290, 130, -1));
+        getContentPane().add(cProgrammingField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 130, -1));
+        getContentPane().add(eddsField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, 130, -1));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        studentDetailsTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -95,28 +95,28 @@ public class admin_Insert_Results extends javax.swing.JFrame {
                 "Name", "Roll No", "Gender", "Father Name", "Course", "Branch"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        tableScrollPanel.setViewportView(studentDetailsTable);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 580, 70));
+        getContentPane().add(tableScrollPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 580, 70));
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jButton2.setText("Save");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        saveButton.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        saveButton.setText("Save");
+        saveButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                saveButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 380, -1, -1));
+        getContentPane().add(saveButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 380, -1, -1));
 
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jButton3.setForeground(new java.awt.Color(255, 0, 51));
-        jButton3.setText("Exit");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        exitButton.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        exitButton.setForeground(new java.awt.Color(255, 0, 51));
+        exitButton.setText("Exit");
+        exitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                exitButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 330, -1, -1));
+        getContentPane().add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 330, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/schoolPic2.png")));
         jLabel5.setText("jLabel5");
@@ -125,7 +125,7 @@ public class admin_Insert_Results extends javax.swing.JFrame {
         pack();
     }
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
         this.setVisible(false);
         admin_HomePage studentframe=new admin_HomePage();
@@ -133,15 +133,15 @@ public class admin_Insert_Results extends javax.swing.JFrame {
         studentframe.setLocationRelativeTo(null);
     }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
-        String rolno=jTextField1.getText();
+        String rolno=rollnoField.getText();
         try
         {
             Connection conn=connectionProvider.getCon();
             Statement st=conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
             ResultSet rs=st.executeQuery("select * from students where rollno='"+rolno+"'");
-            jTable1.setModel(DbUtils.resultSetToTableModel(rs));
+            studentDetailsTable.setModel(DbUtils.resultSetToTableModel(rs));
             if(!rs.first())
             {
                 JOptionPane.showMessageDialog(null, "No Student Found");
@@ -153,14 +153,14 @@ public class admin_Insert_Results extends javax.swing.JFrame {
         }
     }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
-        String rolno=jTextField1.getText();
-        int maths = Integer.parseInt(jTextField2.getText());
-        int physics = Integer.parseInt(jTextField3.getText());
-        int chemistry = Integer.parseInt(jTextField4.getText());
-        int c = Integer.parseInt(jTextField5.getText());
-        int edds = Integer.parseInt(jTextField6.getText());
+        String rolno=rollnoField.getText();
+        int maths = Integer.parseInt(mathsField.getText());
+        int physics = Integer.parseInt(physicsField.getText());
+        int chemistry = Integer.parseInt(chemistryField.getText());
+        int c = Integer.parseInt(cProgrammingField.getText());
+        int edds = Integer.parseInt(eddsField.getText());
         int result=maths+physics+chemistry+c+edds;
         try
         {
@@ -190,9 +190,9 @@ public class admin_Insert_Results extends javax.swing.JFrame {
         });
     }
 
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton searchButton;
+    private javax.swing.JButton saveButton;
+    private javax.swing.JButton exitButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -200,13 +200,13 @@ public class admin_Insert_Results extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
+    private javax.swing.JScrollPane tableScrollPanel;
+    private javax.swing.JTable studentDetailsTable;
+    private javax.swing.JTextField rollnoField;
+    private javax.swing.JTextField mathsField;
+    private javax.swing.JTextField physicsField;
+    private javax.swing.JTextField chemistryField;
+    private javax.swing.JTextField cProgrammingField;
+    private javax.swing.JTextField eddsField;
 
 }
