@@ -68,10 +68,13 @@ public class Student_Search extends javax.swing.JFrame {
             Connection conn=connectionProvider.getCon();
             Statement st=conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
             ResultSet rs=st.executeQuery("select * from students inner join results where students.rollno='"+rolno+"' AND results.rollno='"+rolno+"'");
+            
             if(!rs.first())
             {
                 JOptionPane.showMessageDialog(null, "No Student Found");
             }
+            //if the student's rollno present in the results it will get the the details of students and result and store in ResultSet(rs) object.
+            //then the ResultSet(rs) object will be given as a parameter to the constructor of 'Student_Result.java' class.
             else
             {
                 this.setVisible(false);
@@ -87,7 +90,7 @@ public class Student_Search extends javax.swing.JFrame {
     }
 
     private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {
-
+        //will go back to the 'Home_Main.java' class.
         this.setVisible(false);
         Home_Main studentframe=new Home_Main();
         studentframe.setVisible(true);
