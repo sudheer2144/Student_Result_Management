@@ -18,17 +18,17 @@ public class admin_Student_Registration extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        nameField = new javax.swing.JTextField();
+        rollnoField = new javax.swing.JTextField();
+        fatherField = new javax.swing.JTextField();
+        courseComboBox = new javax.swing.JComboBox<>();
+        branchComboBox = new javax.swing.JComboBox<>();
+        genderComboBox = new javax.swing.JComboBox<>();
+        submitButton = new javax.swing.JButton();
+        exitButton = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        resetButton = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -62,46 +62,46 @@ public class admin_Student_Registration extends javax.swing.JFrame {
         jLabel5.setText("Course");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, -1, -1));
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        nameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                nameFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 100, 230, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 230, -1));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 220, 230, -1));
+        getContentPane().add(nameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 100, 230, -1));
+        getContentPane().add(rollnoField, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 230, -1));
+        getContentPane().add(fatherField, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 220, 230, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--select--", "BTECH", "MTECH", "BE" }));
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, -1, -1));
+        courseComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--select--", "BTECH", "MTECH", "BE" }));
+        getContentPane().add(courseComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, -1, -1));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--select--", "CSE", "ECE", "IT", "ME", "CE" }));
-        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, -1, -1));
+        branchComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--select--", "CSE", "ECE", "IT", "ME", "CE" }));
+        getContentPane().add(branchComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, -1, -1));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--select--", "MALE", "FEMALE" }));
-        jComboBox3.addActionListener(new java.awt.event.ActionListener() {
+        genderComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--select--", "MALE", "FEMALE" }));
+        genderComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox3ActionPerformed(evt);
+                genderComboBoxActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, -1, -1));
+        getContentPane().add(genderComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, -1, -1));
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jButton1.setText("Submit");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        submitButton.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        submitButton.setText("Submit");
+        submitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                submitButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, -1, -1));
+        getContentPane().add(submitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, -1, -1));
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jButton2.setText("Exit");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        exitButton.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        exitButton.setText("Exit");
+        exitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                exitButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 380, -1, -1));
+        getContentPane().add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 380, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 3, 30));
         jLabel8.setText("Student Registration Form");
@@ -112,14 +112,14 @@ public class admin_Student_Registration extends javax.swing.JFrame {
         jLabel7.setText("Branch");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 300, -1, -1));
 
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jButton3.setText("Reset");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        resetButton.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        resetButton.setText("Reset");
+        resetButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                resetButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, -1, -1));
+        getContentPane().add(resetButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/schoolPic2.png")));
         jLabel6.setText("jLabel6");
@@ -129,11 +129,11 @@ public class admin_Student_Registration extends javax.swing.JFrame {
     }
 
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
-        String gender=jComboBox3.getSelectedItem().toString();
-        String branch=jComboBox2.getSelectedItem().toString();
-        String course=jComboBox1.getSelectedItem().toString();
+        String gender=genderComboBox.getSelectedItem().toString();
+        String branch=branchComboBox.getSelectedItem().toString();
+        String course=courseComboBox.getSelectedItem().toString();
         String def="--select--";
         if(gender.equals(def)||course.equals(def)||branch.equals(def))
         {
@@ -141,9 +141,9 @@ public class admin_Student_Registration extends javax.swing.JFrame {
         }
         else
         {
-            String name=jTextField1.getText();
-            String fname=jTextField3.getText();
-            String rollno=jTextField2.getText();
+            String name=nameField.getText();
+            String fname=fatherField.getText();
+            String rollno=rollnoField.getText();
             try
             {
                 Connection conn = connectionProvider.getCon();
@@ -162,7 +162,7 @@ public class admin_Student_Registration extends javax.swing.JFrame {
         }
     }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
         this.setVisible(false);
         admin_HomePage studentframe=new admin_HomePage();
@@ -171,7 +171,7 @@ public class admin_Student_Registration extends javax.swing.JFrame {
         
     }
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void resetButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
         this.setVisible(false);
         admin_Student_Registration frame=new admin_Student_Registration();
@@ -179,7 +179,7 @@ public class admin_Student_Registration extends javax.swing.JFrame {
         frame.setLocationRelativeTo(null);
     }
 
-    private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void genderComboBoxActionPerformed(java.awt.event.ActionEvent evt) {
 
     }
 
@@ -193,12 +193,12 @@ public class admin_Student_Registration extends javax.swing.JFrame {
     }
 
 
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JButton submitButton;
+    private javax.swing.JButton exitButton;
+    private javax.swing.JButton resetButton;
+    private javax.swing.JComboBox<String> courseComboBox;
+    private javax.swing.JComboBox<String> branchComboBox;
+    private javax.swing.JComboBox<String> genderComboBox;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -207,8 +207,8 @@ public class admin_Student_Registration extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField nameField;
+    private javax.swing.JTextField rollnoField;
+    private javax.swing.JTextField fatherField;
 
 }
