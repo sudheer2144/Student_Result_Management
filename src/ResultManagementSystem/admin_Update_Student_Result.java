@@ -19,16 +19,16 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        rollnoField = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        searchButton = new javax.swing.JButton();
+        subject_mathsField = new javax.swing.JTextField();
+        subject_physicsField = new javax.swing.JTextField();
+        subject_chemistryField = new javax.swing.JTextField();
+        subject_cProgrammingField = new javax.swing.JTextField();
+        subject_eddsField = new javax.swing.JTextField();
+        updateButton = new javax.swing.JButton();
+        exitButton = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -60,42 +60,42 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18));
         jLabel6.setText("EDDS");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, 190, 30));
+        getContentPane().add(rollnoField, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, 190, 30));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18));
         jLabel7.setText("Maths");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, -1));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/icons8-search-30.png")));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        searchButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/icons8-search-30.png")));
+        searchButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                searchButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 80, 30, 30));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 150, -1));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 150, -1));
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 150, -1));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 300, 150, -1));
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 350, 150, -1));
+        getContentPane().add(searchButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 80, 30, 30));
+        getContentPane().add(subject_mathsField, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 150, -1));
+        getContentPane().add(subject_physicsField, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 150, -1));
+        getContentPane().add(subject_chemistryField, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 150, -1));
+        getContentPane().add(subject_cProgrammingField, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 300, 150, -1));
+        getContentPane().add(subject_eddsField, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 350, 150, -1));
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jButton2.setText("Update");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        updateButton.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        updateButton.setText("Update");
+        updateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                updateButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 400, -1, -1));
+        getContentPane().add(updateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 400, -1, -1));
 
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jButton3.setText("Exit");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        exitButton.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        exitButton.setText("Exit");
+        exitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                exitButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 400, -1, -1));
+        getContentPane().add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 400, -1, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons_Images/class.png")));
         jLabel8.setText("jLabel8");
@@ -104,14 +104,14 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
         pack();
     }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void updateButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
-        String rolno=jTextField1.getText();
-        int maths = Integer.parseInt(jTextField2.getText());
-        int physics = Integer.parseInt(jTextField3.getText());
-        int chemistry = Integer.parseInt(jTextField4.getText());
-        int c = Integer.parseInt(jTextField5.getText());
-        int edds = Integer.parseInt(jTextField6.getText());
+        String rolno=rollnoField.getText();
+        int maths = Integer.parseInt(subject_mathsField.getText());
+        int physics = Integer.parseInt(subject_physicsField.getText());
+        int chemistry = Integer.parseInt(subject_chemistryField.getText());
+        int c = Integer.parseInt(subject_cProgrammingField.getText());
+        int edds = Integer.parseInt(subject_eddsField.getText());
         int result=maths+physics+chemistry+c+edds;
         try
         {
@@ -130,7 +130,7 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
         }
     }
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
         this.setVisible(false);
         admin_HomePage frame=new admin_HomePage();
@@ -138,9 +138,9 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
         frame.setLocationRelativeTo(null);
     }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
-        String rollno=jTextField1.getText();
+        String rollno=rollnoField.getText();
         try
         {
             Connection conn=connectionProvider.getCon();
@@ -152,11 +152,11 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
             }
             else
             {
-                jTextField2.setText(rs.getString(2));
-                jTextField3.setText(rs.getString(3));
-                jTextField4.setText(rs.getString(4));
-                jTextField5.setText(rs.getString(5));
-                jTextField6.setText(rs.getString(6));
+                subject_mathsField.setText(rs.getString(2));
+                subject_physicsField.setText(rs.getString(3));
+                subject_chemistryField.setText(rs.getString(4));
+                subject_cProgrammingField.setText(rs.getString(5));
+                subject_eddsField.setText(rs.getString(6));
 
             }
         }
@@ -176,9 +176,9 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
     }
 
 
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton searchButton;
+    private javax.swing.JButton updateButton;
+    private javax.swing.JButton exitButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -187,11 +187,11 @@ public class admin_Update_Student_Result extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField rollnoField;
+    private javax.swing.JTextField subject_mathsField;
+    private javax.swing.JTextField subject_physicsField;
+    private javax.swing.JTextField subject_chemistryField;
+    private javax.swing.JTextField subject_cProgrammingField;
+    private javax.swing.JTextField subject_eddsField;
 
 }
