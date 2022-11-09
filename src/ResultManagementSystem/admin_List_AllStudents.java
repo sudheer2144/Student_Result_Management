@@ -14,9 +14,9 @@ public class admin_List_AllStudents extends javax.swing.JFrame {
 
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
+        tableScrollPanel = new javax.swing.JScrollPane();
+        studentListTable = new javax.swing.JTable();
+        backButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -31,7 +31,7 @@ public class admin_List_AllStudents extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        studentListTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -42,18 +42,18 @@ public class admin_List_AllStudents extends javax.swing.JFrame {
                 "Name", "Roll No", "Gender", "Father Name", "Course", "Branch"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        tableScrollPanel.setViewportView(studentListTable);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 490, 280));
+        getContentPane().add(tableScrollPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 490, 280));
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jButton1.setText("Back");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        backButton.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        backButton.setText("Back");
+        backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                backButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 390, -1, -1));
+        getContentPane().add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 390, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 30));
         jLabel1.setText("Student List");
@@ -73,7 +73,7 @@ public class admin_List_AllStudents extends javax.swing.JFrame {
             Connection conn=connectionProvider.getCon();
             Statement st=conn.createStatement();
             ResultSet rs=st.executeQuery("select * from students");
-            jTable1.setModel(DbUtils.resultSetToTableModel(rs));
+            studentListTable.setModel(DbUtils.resultSetToTableModel(rs));
         }
         catch(Exception e)
         {
@@ -81,7 +81,7 @@ public class admin_List_AllStudents extends javax.swing.JFrame {
         }
     }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
         this.setVisible(false);
         admin_HomePage frame = new admin_HomePage();
@@ -98,10 +98,10 @@ public class admin_List_AllStudents extends javax.swing.JFrame {
         });
     }
 
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton backButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JScrollPane tableScrollPanel;
+    private javax.swing.JTable studentListTable;
 
 }
